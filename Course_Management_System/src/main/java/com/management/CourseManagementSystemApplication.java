@@ -1,13 +1,11 @@
-package com.management;
+package com.management.repository;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-@SpringBootApplication
-public class CourseManagementSystemApplication {
+import com.management.entity.Course;
 
-	public static void main(String[] args) {
-		SpringApplication.run(CourseManagementSystemApplication.class, args);
-	}
-
+@Repository
+public interface CourseRepository  extends JpaRepository<Course, Integer>{
+ 
 }
