@@ -1,9 +1,14 @@
 package com.management.courseService;
+import java.util.List;
 
-public interface ServiceInterface {
-              String  Addcourse();
-                String  updatcourse();
-                Integer deleteCourse();
+import com.management.entity.Course;
+
+public interface CourseService {
+	              Course addStudent(Course course);
+	               Course getStudentbyId(Integer sid);
+	               Course updateCoursebyId(Integer id,Course course);
+	               	List<Course>getAllStudent();
+	                 String deleteCoursebyId(Integer id);
+	                	
+   }
                  
-                 
-}
